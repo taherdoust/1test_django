@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+| درباره ی ما
+{% endblock title %}
+
+{% block content %}
+<div class="main-container my-5">
+  <section id="showcase-inner" class="py-5 text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 class="display-3">درباره ما</h1>
+          <p class="lead">این وبلاگ در اصل یه وبلاگ خیلی خفنه. چرا؟ چون دیگه...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breadcrumb -->
+  <section id="bc" class="mt-3">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="{% url 'index' %}"> <i class="fas fa-home"></i> خانه</a>
+          </li>
+          <li class="breadcrumb-item active">درباره</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section id="about" class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h2>خیلی کارای خفنی قراره بکنیم!</h2>
+          <p class="lead">تمام امتیازات این وبلاگ متعلق به گروه Ryan-Group می باشد.</p>
+          <img src="{% static 'img/about.jpg' %}" alt="" />
+          <p class="mt-4" style="font-size: 15px;">
+            گروه وبلاگ نویسی Ryan-Group در تلاش است تا با جمع آوری یک تیم خبره در عرصه تولید محتوا، برنامه نویسی و تصویر برداری حرفه ای به انتقال دانش و افزایش بهره وری در گروه ها و شرکت ها جانی تازه ببخشد.
+            مثلا اینم یه متن از من... 😉
+          </p>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="{% static 'img/Ryan-Group.png' %}" alt="Ahhh!!!" title="Ahhhh!!!!" />
+            <div class="card-body">
+              <h5 class="card-title">Ryan-Group</h5>
+              <h6 class="text-secondary">سلام!</h6>
+              <p class="card-text" style="font-size: 13px;">
+                با اینکه همه میدونیم این تصویر در حقیقت متعلق به گروه چهار نفره ی ماست و توسط هوش مصنوعی mid-journey ایجاد نشده، پس به گروه ما بپیوندین تا با هم بترکونیم... 😄
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock content %}
